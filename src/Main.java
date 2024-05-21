@@ -33,26 +33,28 @@ public class Main {
         int accumulationTotal = 0;
         for (int c = 1; c <=12; c ++) {
             accumulationTotal = accumulationTotal + accumulationMonth;
-            System.out.println("Месяц " + c + " , сумма накоплений равна " + accumulationTotal
-                    + " рублей.");
+            System.out.println("Месяц " + c + " , сумма накоплений равна "
+                    + accumulationTotal + " рублей.");
         }
-        System.out.println("Сумма годовых накоплений " + accumulationTotal);
+        System.out.println("Сумма годовых накоплений равна " + accumulationTotal + " рублей");
         System.out.println("Задача 9");
-        int accumulationMonth2 = 29000;
-        int accumulationTotal2 = 0;
-        for (int c = 1; c <=12; c ++) {
-            accumulationMonth2 += accumulationMonth2/100;
-            accumulationTotal2 += accumulationMonth2;
-            System.out.println("Месяц " + c + " , сумма накоплений равна " + accumulationTotal2
+        int accumulationMonthSalary = 29000;
+        int accumulationTotalSalary = 0;
+        for (int c = 1; c <=12; c = c + 1) {
+            accumulationTotalSalary = accumulationMonthSalary/100;
+            System.out.println("Месяц " + c + " , сумма накоплений равна " + accumulationTotalSalary
                     + " рублей.");
             }
+        int resultSalary = accumulationTotal + accumulationTotalSalary*12;
+
         System.out.println("Сумма годовых накоплений отложенных под 12% равна "
-                + accumulationTotal2 + " рублей.");
+                + resultSalary + " рублей.");
         System.out.println("задача 10");
         int two = 2;
+        int result = 0;
         for (int s = 1; s <= 10; s  ++){
-            two = s * 2;
-            System.out.println(" 2 * " + s + " = " + two);
+            result = two * s;
+            System.out.println(" 2 * " + s + " = " + result);
         }
     }
 }
